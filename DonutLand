@@ -1,0 +1,31 @@
+public class DonutLand {
+
+    public static void main(String[] args) {
+        final int firstBiteSize = 12;
+
+        //making a Donut type object named firstDonut
+        Donut firstDonut;
+
+        //"handle" variable
+        firstDonut = new Donut();
+
+        //name firstDonut
+        firstDonut.name = "roen";
+
+        //this is printing the member variable before we have run our methods
+        System.out.println("name is " + firstDonut.name + " and volume left is " + firstDonut.getPercRemaining());
+
+        //calling the method, simulateEating with a biteSize value of firstBiteSize
+        System.out.println("Simulating Eating and passing through a bite size of " + firstBiteSize);
+
+        //calling the simulateEating method on our firstDonut object
+        firstDonut.simulateEating(firstBiteSize);
+
+        //return the member variables after we have run the methods on the firstDonut object
+        System.out.println("after being eaten " + firstDonut.name + "s percent remaing is %" + firstDonut.getPercRemaining());
+
+    }//close main method
+
+    //public static //create Donut objects
+    //public static //manipulate our donuts
+}//close class

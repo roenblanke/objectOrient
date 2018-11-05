@@ -1,0 +1,23 @@
+public class Donut {
+
+    //member variables
+    private int percRemaining = 100;
+    public String name;
+
+    //simulates a bite being taken out of the donut
+    public void simulateEating(int percEaten) {
+
+        percRemaining = percRemaining - percEaten;
+
+    }//close simulateEating
+
+    //return percRemaining. This is known as a "getter;" it requires no input
+    //and it merely returns a member variable
+    public int getPercRemaining() {
+        return percRemaining;
+
+    }//close getPercRemaining
+    
+    
+}//close class   
+    
